@@ -1,15 +1,22 @@
 import React from "react";
 import Header from "modules/Header";
 
+import './index.scss';
+
 const App = () => {
   return (
-    <div>
-        <Header title="Header 1" />
-        <Header title="Header 2" />
-        <Header title="Header 3" />
-        <Header title="Header 4" />
-    </div>)
-}
-
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      <Header title="Header" containerStyle={{ backgroundColor: "blue" }} />
+    </div>
+  );
+};
 
 export default App;
