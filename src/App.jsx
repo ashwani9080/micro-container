@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "modules/Header";
 
-import './index.scss';
+import "./index.scss";
 
 const App = () => {
   return (
@@ -14,7 +14,13 @@ const App = () => {
         margin: 0,
       }}
     >
-      <Header title="Header" containerStyle={{ backgroundColor: "blue" }} />
+      <Header
+        navigation={[
+          { name: "Dashboard", href: "#", current: true },
+          { name: "Products", href: "#" },
+        ]}
+        containerStyle={{ backgroundColor: "" }}
+      />
     </div>
   );
 };
