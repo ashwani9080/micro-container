@@ -44,7 +44,7 @@ module.exports = {
       name: "container",
       filename: "remoteEntry.js",
       remotes: {
-        modules:"modules@http://localhost:8080/remoteEntry.js",
+        modules:"modules@https://microfrontendsmodules.herokuapp.com/remoteEntry.js",
       },
       exposes: {
       },
